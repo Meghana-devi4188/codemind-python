@@ -1,11 +1,6 @@
-a=int(input())
-i=1
+x=int(input())
 s=0
-while i<a:
-    if a%i==0:
-        s+=i
-    i+=1
-if a==s:
-    print('True')
-else:
-    print('False')
+for i in range(1,x):
+  if x%i==0:
+      s+=i
+print(s==x)
