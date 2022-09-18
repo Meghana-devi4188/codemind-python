@@ -1,11 +1,11 @@
-n=int(input())
-a=n**2
-sum=0
-while a!=0:
-    b=a%10
-    a=a//10
-    sum+=b
-if sum==n:
+m=int(input())
+s=m*m
+b=0
+while(s>0):
+    a=s%10
+    b=b+a
+    s=s//10
+if b==m:
     print("Neon Number")
-elif sum!=n:
+else:
     print("Not Neon Number")
