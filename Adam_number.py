@@ -1,15 +1,16 @@
-def reve(n):
+def rev(n):
     rev=0
     while n!=0:
-        rem=n%10
-        rev=rev*10+rem
+        a=n%10
+        rev=rev*10+a
         n//=10
     return rev
 n=int(input())
-r=reve(n)
+sq=n*n
+r=rev(n)
 r*=r
-r=reve(r)
-if n*n==r:
-    print("True")
+s=rev(r)
+if s==sq:
+    print(True)
 else:
-    print("False")
+    print(False)
