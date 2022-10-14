@@ -1,11 +1,9 @@
-a=int(input())
-i=1
-s=0
-while i<a:
-    if a%i==0:
-        s+=i
-    i+=1
-if s>a:
-    print("True")
+n=int(input())
+j=0
+for i in range(1,n//2+1,1):
+    if n%i==0:
+       j+=i
+if(j>n):
+   print('True')
 else:
-    print("False")
+  print('False')
